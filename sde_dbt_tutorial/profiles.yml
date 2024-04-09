@@ -1,4 +1,3 @@
----
 config:
   send_anonymous_usage_stats: false
 sde_dbt_tutorial:
@@ -12,8 +11,7 @@ sde_dbt_tutorial:
       user: dbt
       pass: password1234
       dbname: dbt
-      schema: your_name_warehouse
-
+      schema: dev_warehouse
     prod:
       type: postgres
       threads: 20
@@ -23,7 +21,6 @@ sde_dbt_tutorial:
       pass: password1234
       dbname: dbt
       schema: warehouse
-
 elementary:
   outputs:
     default:
@@ -35,5 +32,5 @@ elementary:
       dbname: dbt
       schema: your_name_warehouse_elementary
       threads: 20
-      keepalives_idle: 0  # default 0 seconds
-      connect_timeout: 10  # default 10 seconds
+      keepalives_idle: 0
+      connect_timeout: 10

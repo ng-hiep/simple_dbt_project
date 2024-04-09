@@ -17,6 +17,11 @@ The process used to bring these data into data warehouse is the EL part. It can 
 
 We will follow data warehouse best practices like having `staging tables` , testing, using slowly changing dimensions type 2 and naming conventions.
 
+In the **PostgreSQL** database, we have:
+- `raw_layer`: Source
+- `snapshot`:
+- `warehouse`: The rest
+
 ## Prerequisites
 
 1. [Docker](https://docs.docker.com/get-docker/)
