@@ -5,6 +5,18 @@ Repository for the following blogs
 
 # Setup
 
+**Project objective:** we are asked by the marketing team to create a denomalized table `customer_orders`, with infomation about every order placed by the customers. Let's assume the `customers` and `orders` data are loaded into the warehouse.
+
+The process used to bring these data into data warehouse is the EL part. It can be done using:
+
+- [Fivetran](https://fivetran.com/why-fivetran)
+- [Airbyte](https://airbyte.io/)
+
+## Data warehouse design:
+![alt text](https://www.startdataengineering.com/images/dbt_tutorial/data_flow.png)
+
+We will follow data warehouse best practices like having `staging tables` , testing, using slowly changing dimensions type 2 and naming conventions.
+
 ## Prerequisites
 
 1. [Docker](https://docs.docker.com/get-docker/)
